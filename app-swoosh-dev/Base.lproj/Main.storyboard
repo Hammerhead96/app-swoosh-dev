@@ -94,6 +94,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="statementLbl" destination="c25-Wd-HCQ" id="Wg9-rQ-lqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,6 +276,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="beginnerPressed:" destination="iCY-2G-KwX" eventType="touchUpInside" id="0Di-9T-Kck"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-eG-98g" customClass="BorderButton" customModule="app_swoosh_dev" customModuleProvider="target">
                                         <rect key="frame" x="125" y="0.0" width="85" height="37"/>
@@ -281,10 +287,13 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ballerPressed:" destination="iCY-2G-KwX" eventType="touchUpInside" id="XGC-rf-LsK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-yV-knR" customClass="BorderButton" customModule="app_swoosh_dev" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-yV-knR" customClass="BorderButton" customModule="app_swoosh_dev" customModuleProvider="target">
                                 <rect key="frame" x="16" y="602" width="343" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4006314212" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -294,6 +303,9 @@
                                 <state key="normal" title="Finish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ylM-oR-J42" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="Q7j-6q-SHe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -311,8 +323,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZLw-C1-hIp"/>
                     </view>
+                    <connections>
+                        <outlet property="finishedBtn" destination="YP8-yV-knR" id="LJL-26-Tv0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZP-Zq-bBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ylM-oR-J42" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1408.8" y="26.53673163418291"/>
         </scene>
