@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		633E7B2A22759A2800A5D5B1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E7B2922759A2800A5D5B1 /* Player.swift */; };
+		6354B970227666070036D850 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6354B96F227666070036D850 /* bell.mp3 */; };
+		6354B9742276665E0036D850 /* cheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6354B9732276665E0036D850 /* cheer.mp3 */; };
+		6354B9762276666D0036D850 /* basketball-bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6354B9752276666D0036D850 /* basketball-bounce.wav */; };
+		6354B97A2276790B0036D850 /* basketball.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6354B9792276790B0036D850 /* basketball.wav */; };
 		6375DA25227560F000D9DF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375DA24227560F000D9DF19 /* AppDelegate.swift */; };
 		6375DA27227560F000D9DF19 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375DA26227560F000D9DF19 /* MainVC.swift */; };
 		6375DA2A227560F000D9DF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6375DA28227560F000D9DF19 /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		633E7B2922759A2800A5D5B1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6354B96F227666070036D850 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		6354B9732276665E0036D850 /* cheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheer.mp3; sourceTree = SOURCE_ROOT; };
+		6354B9752276666D0036D850 /* basketball-bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "basketball-bounce.wav"; sourceTree = SOURCE_ROOT; };
+		6354B9792276790B0036D850 /* basketball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = basketball.wav; sourceTree = "<group>"; };
 		6375DA21227560F000D9DF19 /* app-swoosh-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6375DA24227560F000D9DF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6375DA26227560F000D9DF19 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				6375DA3E227590B800D9DF19 /* Controller */,
 				6375DA24227560F000D9DF19 /* AppDelegate.swift */,
 				6375DA28227560F000D9DF19 /* Main.storyboard */,
+				6354B9732276665E0036D850 /* cheer.mp3 */,
+				6354B9792276790B0036D850 /* basketball.wav */,
+				6354B96F227666070036D850 /* bell.mp3 */,
+				6354B9752276666D0036D850 /* basketball-bounce.wav */,
 				6375DA2B227560F200D9DF19 /* Assets.xcassets */,
 				6375DA2D227560F200D9DF19 /* LaunchScreen.storyboard */,
 				6375DA30227560F200D9DF19 /* Info.plist */,
@@ -159,7 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6375DA2F227560F200D9DF19 /* LaunchScreen.storyboard in Resources */,
+				6354B9762276666D0036D850 /* basketball-bounce.wav in Resources */,
+				6354B970227666070036D850 /* bell.mp3 in Resources */,
+				6354B9742276665E0036D850 /* cheer.mp3 in Resources */,
 				6375DA2C227560F200D9DF19 /* Assets.xcassets in Resources */,
+				6354B97A2276790B0036D850 /* basketball.wav in Resources */,
 				6375DA2A227560F000D9DF19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

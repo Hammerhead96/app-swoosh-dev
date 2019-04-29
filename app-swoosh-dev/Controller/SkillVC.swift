@@ -11,15 +11,19 @@ import UIKit
 class SkillVC: UIViewController {
 
     var player: Player!
-    
+    @IBOutlet weak var leagueLbl: UILabel!
     @IBOutlet weak var finishedBtn: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(player.desiredLeague)
+        if let league = player.desiredLeague {
+        leagueLbl.text = ("\(league) League")
+        }
     }
     func selectSkill(selectedSkillLevel: String) {
         player.selectedSkillLevel = selectedSkillLevel
         finishedBtn.isEnabled = true
+        finishedBtn.wiggle()
     }
 
     @IBAction func beginnerPressed(_ sender: Any) {

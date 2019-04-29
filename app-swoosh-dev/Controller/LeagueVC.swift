@@ -32,6 +32,7 @@ class LeagueVC: UIViewController {
     func selectLeague(leagueType: String) {
     player.desiredLeague = leagueType
         nextBtn.isEnabled = true
+        nextBtn.wiggle()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let skillVC = segue.destination as? SkillVC {
